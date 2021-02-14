@@ -17,7 +17,7 @@ weatherform.addEventListener('submit', (e) => {
     message2.textContent = ''
     const location = search.value
     console.log(location)
-    const url = 'http://192.168.2.97:3000/weather?address='+location
+    const url = '/weather?address='+location
 
     fetch(url).then((response) => {
 
