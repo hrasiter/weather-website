@@ -15,10 +15,12 @@ const forecast = (lat,lon, callback)=>{
                 const temp = current.temperature
                 const feelslike = current.feelslike
                 const desc = current.weather_descriptions[0]
+                const humidity = current.humidity
                 callback(undefined, {
                     temp,
                     feelslike,
-                    desc
+                    desc,
+                    humidity
                 })
             }
 })}
