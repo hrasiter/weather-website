@@ -37,7 +37,7 @@ app.get('/about', (req, res)=>{
 
 app.get('/help', (req, res)=>{
     res.render('help', {
-        message:'This is the help page for love',
+        message:'You should first provide a city name into the seach-box and then click the search button.',
         title: 'Help',
         name: 'Rasit'
     })
@@ -87,7 +87,7 @@ app.get('/products', (req,res)=>{
     if(!req.query.search)
     {
         return res.send({
-            error: 'You must provide a searc term'
+            error: 'You must provide a search term'
         })
     }
     console.log(req.query.search)
